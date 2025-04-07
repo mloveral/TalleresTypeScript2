@@ -1,7 +1,7 @@
-class Serie {
-    constructor(private id: number, private name: string,
-        private channel: string, private seasons: number,
-        private genre: string, private link: string, private img: string
+export class Serie {
+    constructor(public id: number, public name: string,
+        public channel: string, public seasons: number,
+        public genre: string, public link: string, public img: string
     ) {
 
     }

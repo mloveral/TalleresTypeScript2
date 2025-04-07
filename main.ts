@@ -1,4 +1,4 @@
-import { series } from "./data";
+import { series } from "./data.js";
 
 const tableBody = document.getElementById("table-body");
 let nuevoContenido: string = ``;
@@ -6,10 +6,10 @@ let nuevoContenido: string = ``;
 series.forEach(serie => {
     nuevoContenido = nuevoContenido.concat(`
         <tr>
-            <th scope="row">${serie.getId()}</th>
-            <td><a href="${serie.getLink()}">${serie.getName()}</a></td>
-            <td>${serie.getChannel()}</td>
-            <td>${serie.getSeasons()}</td>
+            <th scope="row">${serie.id}</th>
+            <td><a href="${serie.link}">${serie.name}</a></td>
+            <td>${serie.channel}</td>
+            <td>${serie.seasons}</td>
         </tr>
     `);
 });
